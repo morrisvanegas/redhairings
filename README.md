@@ -12,3 +12,13 @@ to build:
 1. `cd src`
 2. `mkdir build`
 3. `./install.sh`
+
+## Demo
+
+To run the demo simply:
+
+`./runDemo.sh`
+
+If you'd like to run the demo on a new target image:
+
+`./runDemo.sh target/image/path`
