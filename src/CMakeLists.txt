@@ -15,11 +15,12 @@ include(../dlib/cmake)
 # .cpp files to compile.  Here each example consists of only one .cpp file but
 # in general you will make programs that const of many .cpp files.
 
+# include_directories(${OpenCV_INCLUDE_DIRS})
+
+ADD_EXECUTABLE(FaceMatcher FaceMatcher.cpp)
+TARGET_LINK_LIBRARIES(FaceMatcher dlib)
 
 find_package(OpenCV)
 if (OpenCV_FOUND)
-   include_directories(${OpenCV_INCLUDE_DIRS})
-
-   ADD_EXECUTABLE(FaceMatcher FaceMatcher.cpp)
-   TARGET_LINK_LIBRARIES(FaceMatcher dlib ${OpenCV_LIBS} )
+   
 endif()

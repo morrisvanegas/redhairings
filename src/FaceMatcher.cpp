@@ -44,6 +44,8 @@
 #include <dlib/gui_widgets.h>
 #include <dlib/image_io.h>
 #include <iostream>
+#include <fstream>
+#include <string>
 
 using namespace dlib;
 using namespace std;
@@ -85,8 +87,12 @@ int main(int argc, char** argv)
             cout << "processing image " << argv[i] << endl;
             array2d<rgb_pixel> img;
             load_image(img, argv[i]);
+
+            string fname(argv[i]);
+
+            ofstream outputFile(fname + ".txt");
             // Make the image larger so we can detect small faces.
-            pyramid_up(img);
+            //pyramid_up(img);
 
             // Now tell the face detector to give us a list of bounding boxes
             // around all the faces in the image.
@@ -100,8 +106,10 @@ int main(int argc, char** argv)
             {
                 full_object_detection shape = sp(img, dets[j]);
                 cout << "number of parts: "<< shape.num_parts() << endl;
-                cout << "pixel position of first part:  " << shape.part(0) << endl;
-                cout << "pixel position of second part: " << shape.part(1) << endl;
+                for (unsigned long k = 0; k < 68; ++k)
+                {
+                    outputFile << shape.part(k).x() << " "  << shape.part(k).y() << endl;
+                }
                 // You get the idea, you can get all the face part locations if
                 // you want them.  Here we just store them in shapes so we can
                 // put them on the screen.
@@ -120,7 +128,7 @@ int main(int argc, char** argv)
             //win_faces.set_image(tile_images(face_chips));
 
             cout << "Hit enter to process the next image..." << endl;
-            cin.get();
+            //cin.get();
         }
     }
     catch (exception& e)
