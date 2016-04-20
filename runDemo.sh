@@ -3,7 +3,7 @@
 if [ $# -eq 0 ]
   then
     echo "No arguments supplied, defaulting to test case"
-    img="img/tristan.jpg"
+    img="img/ron.jpg"
   else
   	img=$1
 fi

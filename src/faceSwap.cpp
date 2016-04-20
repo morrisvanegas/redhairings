@@ -122,7 +122,7 @@ int main( int argc, char** argv)
 {	
 	//Read input images
     string filename1 = argv[1];
-    string filename2 = "img/ron.jpg";
+    string filename2 = "img/vic-test-man.jpg";
     
     Mat img1 = imread(filename1);
     Mat img2 = imread(filename2);
