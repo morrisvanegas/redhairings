@@ -122,7 +122,7 @@ int main( int argc, char** argv)
 {	
 	//Read input images
     string filename1 = argv[1];
-    string filename2 = "img/vic-test-man.jpg";
+    string filename2 = argv[2];
     
     Mat img1 = imread(filename1);
     Mat img2 = imread(filename2);
@@ -194,7 +194,7 @@ int main( int argc, char** argv)
     img1Warped.convertTo(img1Warped, CV_8UC3);
 	seamlessClone(img1Warped,img2, mask, center, output, NORMAL_CLONE);
     
-    imwrite(string(argv[2]) + "/output.png", output);
+    imwrite(string(argv[3]) + "/output.png", output);
 
 	return 1;
 }
