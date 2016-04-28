@@ -22,3 +22,26 @@ To run the demo simply:
 If you'd like to run the demo on a new target image:
 
 `./runDemo.sh target/image/path`
+
+## Editing a10
+
+If you edit a10_main.cpp (the script that turn the image into a painting), make sure to run the makefile again from inside src.
+
+Items that belong to the a10 script are inside _build, CPP, and Eigen folders. 
+
+
+## Running a dlib example
+
+to build:
+
+1. cd examples
+2. mkdir build
+3. cd build
+4. cmake ..
+5. cmake --build . --config Release
+
+From dlib-master/examples/build:
+
+`./webcam_face_pose_ex`
+
+
