@@ -46,9 +46,58 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <opencv2/opencv.hpp>
 
 using namespace dlib;
 using namespace std;
+using namespace cv;
+
+
+double blurriness_value (Mat& img)
+{
+    
+    //Calculate the laplacian of the image, converting it to the CV_64F datatype
+    Laplacian(img, lap, CV_64F);
+    
+    //Define mu, sigma
+    Scalar mu, sigma;
+    
+    //take the mean standard deviaton of the laplacian of the image
+    meanStdDev(lap, mu, sigma);
+    
+    //calculate the blurriness measure as the square of the standard deviation (i.e. the variance)
+    double blurrinessMeasure = sigma.val[0]*sigma.val[0];
+    
+    //print it out to the console for trouble shooting
+    cout << blurrinessMeasure;
+    
+    //return the value to be used later
+    return blurrinessMeasure
+}
+
+double straightness_value (const full_object_detection& det)
+{
+    // Find the length from the left eye corner to the side of the face
+    left_eye = det.part(37);
+    left_face_edge = det.part(1);
+    l = length(left_eye - left_face_edge);
+    
+    // Find the length from the right eye corner to the side of the face
+    left_eye = det.part(37);
+    right_eye = det.part(46);
+    right_face_edge = det.part(17);
+    r = length(right_face_edge - right_eye);
+    
+    
+    // Find the ratio of the two distances
+
+    double straightness_value = l/r
+    
+    return straightness_value
+}
+
+
+
 
 // ----------------------------------------------------------------------------------------
 

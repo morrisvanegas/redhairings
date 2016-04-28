@@ -20,6 +20,9 @@ include(../dlib/cmake)
 ADD_EXECUTABLE(FaceMatcher FaceMatcher.cpp)
 TARGET_LINK_LIBRARIES(FaceMatcher dlib)
 
+ADD_EXECUTABLE(DisplayImage DisplayImage.cpp)
+TARGET_LINK_LIBRARIES(DisplayImage dlib)
+
 find_package(OpenCV)
 if (OpenCV_FOUND)
    

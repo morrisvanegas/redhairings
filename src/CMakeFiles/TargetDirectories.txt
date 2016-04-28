@@ -1,0 +1,7 @@
+/Users/ronrosenberg/Desktop/github/redhairings/src/CMakeFiles/edit_cache.dir
+/Users/ronrosenberg/Desktop/github/redhairings/src/CMakeFiles/rebuild_cache.dir
+/Users/ronrosenberg/Desktop/github/redhairings/src/CMakeFiles/DisplayImage.dir
+/Users/ronrosenberg/Desktop/github/redhairings/src/CMakeFiles/FaceMatcher.dir
+/Users/ronrosenberg/Desktop/github/redhairings/src/dlib_build/CMakeFiles/edit_cache.dir
+/Users/ronrosenberg/Desktop/github/redhairings/src/dlib_build/CMakeFiles/rebuild_cache.dir
+/Users/ronrosenberg/Desktop/github/redhairings/src/dlib_build/CMakeFiles/dlib.dir
