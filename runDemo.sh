@@ -14,9 +14,10 @@ do
 cp img/test.jpg img/test_copy.jpg
 
 ./src/build/FaceMatcher models/shape_predictor_68_face_landmarks.dat $img
-./src/build/faceswap $img img/vic_crop.png src/ron_output
+./src/build/faceswap $img img/donald_trump.jpg src/ron_output
 
 #echo "running brush filter"
 #cd src
 #./a10
 echo "...done..."
+done
