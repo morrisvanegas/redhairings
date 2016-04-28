@@ -1,0 +1,63 @@
+Configure edimax wifi for MIT secure
+https://www.packet6.com/configuring-edimax-ew-7811un-for-wpa2-enterprise-wireless/
+
+
+Configure Dropbox App access
+http://raspi.tv/2013/how-to-use-dropbox-with-raspberry-pi
+
+
+inside: ~/Dropbox-Uploader:
+./dropbox_uploader.sh upload ../Desktop/batman.jpg batman.jpg
+chmod a+x CapAndSend.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Update your raspberri pi
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo rpi-update
+reboot
+
+
+Add development tools for raspbian
+sudo apt-get install build-essential
+
+install compiler (4.9 the highest. Dont get 5.x or above)
+sudo apt-get install gcc
+
+
+
+
+Download dlib-master.zip. Recompile
+https://github.com/davisking/dlib
+
+compile by moving into example folder 
+mkdir build; cd build; cmake ..; cmake --build .
+
+
+
+
+dnn_mnist_ex.cpp
+no matching function for call to ‘min(long unsigned int, std::vector<dlib::matrix<unsigned char> >::size_type)
+
