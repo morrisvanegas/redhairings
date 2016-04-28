@@ -1,0 +1,19 @@
+Determining if the function sgetrf_single exists failed with the following output:
+Change Dir: /Users/morrisvanegas/github/redhairings/src/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a44b4/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_a44b4.dir/build.make CMakeFiles/cmTC_a44b4.dir/build
+Building C object CMakeFiles/cmTC_a44b4.dir/CheckFunctionExists.c.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=sgetrf_single   -o CMakeFiles/cmTC_a44b4.dir/CheckFunctionExists.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a44b4
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a44b4.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgetrf_single -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_a44b4.dir/CheckFunctionExists.c.o  -o cmTC_a44b4  /usr/lib/libcblas.dylib 
+Undefined symbols for architecture x86_64:
+  "_sgetrf_single", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_a44b4] Error 1
+make: *** [cmTC_a44b4/fast] Error 2
+
+
