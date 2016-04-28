@@ -1,4 +1,4 @@
-# redhairings
+# Mystery Morph
 
 ## Installation
 
@@ -25,7 +25,7 @@ If you'd like to run the demo on a new target image:
 
 ## Editing a10
 
-If you edit a10_main.cpp (the script that turn the image into a painting), make sure to run the makefile again from inside src.
+If you edit a10_main.cpp (the script that turns the image into a painting), make sure to run the makefile again from inside src.
 
 Items that belong to the a10 script are inside _build, CPP, and Eigen folders. 
 
@@ -34,11 +34,11 @@ Items that belong to the a10 script are inside _build, CPP, and Eigen folders.
 
 to build:
 
-1. cd examples
-2. mkdir build
-3. cd build
-4. cmake ..
-5. cmake --build . --config Release
+1. `cd examples`
+2. `mkdir build`
+3. `cd build`
+4. `cmake ..`
+5. `cmake --build . --config Release`
 
 From dlib-master/examples/build:
 
