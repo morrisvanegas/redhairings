@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 2.8.4)
 
 PROJECT(AntiquePortrait)
 
-include(../dlib/cmake)
+include(../dlib-master/dlib/cmake)
 
 # Tell CMake to compile a program.  We do this with the ADD_EXECUTABLE()
 # statement which takes the name of the output executable and then a list of

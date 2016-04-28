@@ -80,7 +80,7 @@ int main(int argc, char** argv)
         deserialize(argv[1]) >> sp;
 
 
-        //image_window win;//, win_faces;
+        image_window win;//, win_faces;
         // Loop over all the images provided on the command line.
         for (int i = 2; i < argc; ++i)
         {
@@ -117,9 +117,9 @@ int main(int argc, char** argv)
             }
 
             // Now let's view our face poses on the screen.
-            //win.clear_overlay();
-            //win.set_image(img);
-            //win.add_overlay(render_face_detections(shapes));
+            win.clear_overlay();
+            win.set_image(img);
+            win.add_overlay(render_face_detections(shapes));
 
             // We can also extract copies of each face that are cropped, rotated upright,
             // and scaled to a standard size as shown here:
