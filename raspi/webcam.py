@@ -6,7 +6,7 @@ import sys
 cascPath = "haarcascade_frontalface_alt.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
 
-video_capture = cv2.VideoCapture(0)
+video_capture = cv2.VideoCapture(-1)
 
 is_there_a_face = 0
 
@@ -14,6 +14,9 @@ while is_there_a_face == 0:
     # Capture frame-by-frame
     #time.sleep(1)
     ret, frame = video_capture.read()
+
+    print "is this working"
+    # print frame.shape
 
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 

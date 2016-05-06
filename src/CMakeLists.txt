@@ -20,6 +20,9 @@ include(../dlib-master/dlib/cmake)
 ADD_EXECUTABLE(FaceMatcher FaceMatcher.cpp)
 TARGET_LINK_LIBRARIES(FaceMatcher dlib)
 
+#ADD_EXECUTABLE(faceSwap_RR faceSwap_RR.cpp)
+#TARGET_LINK_LIBRARIES(faceSwap_RR ${OpenCV_INCLUDE_DIRS})
+
 find_package(OpenCV)
 if (OpenCV_FOUND)
    
