@@ -1,6 +1,0 @@
-/Users/morrisvanegas/github/redhairings/src/build/CMakeFiles/edit_cache.dir
-/Users/morrisvanegas/github/redhairings/src/build/CMakeFiles/rebuild_cache.dir
-/Users/morrisvanegas/github/redhairings/src/build/CMakeFiles/FaceMatcher.dir
-/Users/morrisvanegas/github/redhairings/src/build/dlib_build/CMakeFiles/edit_cache.dir
-/Users/morrisvanegas/github/redhairings/src/build/dlib_build/CMakeFiles/rebuild_cache.dir
-/Users/morrisvanegas/github/redhairings/src/build/dlib_build/CMakeFiles/dlib.dir

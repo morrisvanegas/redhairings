@@ -8,7 +8,7 @@ cmake_minimum_required(VERSION 2.8.4)
 
 PROJECT(AntiquePortrait)
 
-include(../dlib/cmake)
+include(../dlib-master/dlib/cmake)
 
 # Tell CMake to compile a program.  We do this with the ADD_EXECUTABLE()
 # statement which takes the name of the output executable and then a list of
@@ -20,8 +20,8 @@ include(../dlib/cmake)
 ADD_EXECUTABLE(FaceMatcher FaceMatcher.cpp)
 TARGET_LINK_LIBRARIES(FaceMatcher dlib)
 
-ADD_EXECUTABLE(DisplayImage DisplayImage.cpp)
-TARGET_LINK_LIBRARIES(DisplayImage dlib)
+#ADD_EXECUTABLE(faceSwap_RR faceSwap_RR.cpp)
+#TARGET_LINK_LIBRARIES(faceSwap_RR ${OpenCV_INCLUDE_DIRS})
 
 find_package(OpenCV)
 if (OpenCV_FOUND)

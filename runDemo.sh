@@ -9,15 +9,13 @@ if [ $# -eq 0 ]
 fi
 
 echo "...computing images..."
-while true 
+while true
 do
-cp ~/Desktop/test.jpg ~/Desktop/test1.jpg
-#sleep 1
+cp img/test.jpg img/test_copy.jpg
 
 ./src/build/FaceMatcher models/shape_predictor_68_face_landmarks.dat $img
 ./src/build/faceswap $img img/donald_trump.jpg src/ron_output
-#./src/build/faceswap $img img/vic_crop.png src/ron_output
-#open src/ron_output/output.png
+
 #echo "running brush filter"
 #cd src
 #./a10
