@@ -188,7 +188,7 @@ int main( int argc, char** argv)
     cout << "ratio:" << fixed << ratio << endl;
     
     //Conditional statements on blurriness and straightness values, return -1 to bash script if met
-    if (blurriness > 0.0003) {
+    if (blurriness > 0.005) {
         cout << "im sorry this is just too blurry" << endl;
         return -1;
     }
@@ -267,7 +267,11 @@ int main( int argc, char** argv)
     img1Warped.convertTo(img1Warped, CV_8UC3);
 	seamlessClone(img1Warped,img2, mask, center, output, NORMAL_CLONE);
     
-    imwrite(string(argv[3]) + "/out" + string(argv[4]) + ".png", output);
+    //imwrite(string(argv[3]) + "/out" + argv[4] + ".png", output);
+    Mat im_gray;
+    cvtColor(output,im_gray,CV_RGB2GRAY);
+    imwrite(string(argv[3]) + "/out" + string(argv[4]) + ".png", im_gray);
+
     
     return 0;
     
