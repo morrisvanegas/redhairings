@@ -1,0 +1,6 @@
+/Users/morrisvanegas/Dropbox (MIT)/2.744 Red Hairing/master/src/build/CMakeFiles/edit_cache.dir
+/Users/morrisvanegas/Dropbox (MIT)/2.744 Red Hairing/master/src/build/CMakeFiles/rebuild_cache.dir
+/Users/morrisvanegas/Dropbox (MIT)/2.744 Red Hairing/master/src/build/CMakeFiles/FaceMatcher.dir
+/Users/morrisvanegas/Dropbox (MIT)/2.744 Red Hairing/master/src/build/dlib_build/CMakeFiles/edit_cache.dir
+/Users/morrisvanegas/Dropbox (MIT)/2.744 Red Hairing/master/src/build/dlib_build/CMakeFiles/rebuild_cache.dir
+/Users/morrisvanegas/Dropbox (MIT)/2.744 Red Hairing/master/src/build/dlib_build/CMakeFiles/dlib.dir
