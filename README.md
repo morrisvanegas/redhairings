@@ -1,5 +1,9 @@
 # Mystery Morph
 
+## Update
+Details of construction using this project can be found at:
+http://morrisvanegas.com/forus/faceswap.html
+
 ## Installation
 
 We assume OpenCV is already installed (want to include in cmake?)
